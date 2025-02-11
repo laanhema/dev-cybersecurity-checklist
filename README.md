@@ -19,6 +19,7 @@
 ##
 
 - use already HTTPS/SSL during _dev_:
+
   - Self-signed SSL Certificate during _dev_
   - Real certificate from for ex. LetsEncrypt when _release_
   - remember to renew certificates
@@ -26,6 +27,7 @@
 ##
 
 - make a systematic and planned updating cycle
+
   - Keep Programs + OS + Libraries always updated
   - stay up-to-date about known vulnerabilities
   - vulnerability scans + penetration-tests
