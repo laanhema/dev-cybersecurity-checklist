@@ -10,7 +10,7 @@
 
 ##
 
-- secure password conventions for users:
+- Secure password conventions for users:
 
   - at least 12-16 characters long (preferably longer), long random sentences are a good choice
   - prohibit inputting already known or breached passwords (Pwned Passwords API)
@@ -26,9 +26,64 @@
 
 ##
 
-- make a systematic and planned updating cycle
+- make a systematic and planned updating cycle!
 
   - Keep Programs + OS + Libraries always updated
   - stay up-to-date about known vulnerabilities
   - penetration tests
   - vulnerability scanner
+
+##
+
+- do _hardening_ for devices and servers:
+
+  - stricten cybersecurity settings
+  - disable unnecessary services
+  - delete unnecessary users
+  - uninstall unnecessary programs
+
+##
+
+- storage of secrets (API-keys, database user accounts and passwords, other confidential data that enables access to systems):
+
+  - NEVER ever store secrets inside repo!
+  - use a centralized secret-management tool with secure cryptography practices (for ex. AWS IAM)
+
+##
+
+- Some forms of cyberthreats:
+
+  - Man In The Middle
+  - SQL-Injection
+  - Client-Side Code Injection
+  - Broken authentication / session-control
+  - Insecure Direct Object References
+  - Protocol Downgrade (HTTPS -> HTTP)
+  - Accidental configuration mistakes
+  - Accidentally revealing sensitive data
+    <br>
+    <br>
+  - Unsafe APIs
+  - Lack of proper logging and surveillance
+  - 3rd-party-dependancies (attack-vectors through them)
+  - Denial of Service / Distributed Denial of Service
+  - Browser history leaks
+  - Cookie hijacking / injection
+  - Confidential information in an email (email is not encrypted at all)
+
+##
+
+- How to fight against common cyberattacks (Man In The Middle, SQL-Injection, Client-Side Code Injection, DoS / DDoS):
+
+  - Use a VPN when connected to public wifi
+  - Make sure SSL is up-to-date, certificates and all
+  - Use MFA whenever possible, use strong passwords
+  - End-to-End Encryption in general
+  - Accept only specific syntax of data into forms (regex useful here?)
+    - Strict enough rules also help against execution of Client-Side Code
+    - (This should ALWAYS happen in backend-side! )
+  - Change all unnecessary user-inputted characters to strings
+  - Strip unnecessary rights from database users
+  - Protect cookies (for ex. bind cookies to specific IP-addresses and accept only those)
+  - Set up Web Application Firewall (WAF) rules
+  - DDoS protection services (for ex. CloudFlare)
