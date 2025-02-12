@@ -86,4 +86,4 @@
   - Strip unnecessary rights from database users
   - Protect cookies (for ex. bind cookies to specific IP-addresses and accept only those)
   - Set up Web Application Firewall (WAF) rules
-  - DDoS protection services (for ex. CloudFlare)
+  - DDoS protection services (for ex. CloudFlare has one)
