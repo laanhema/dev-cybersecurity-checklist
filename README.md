@@ -30,4 +30,5 @@
 
   - Keep Programs + OS + Libraries always updated
   - stay up-to-date about known vulnerabilities
-  - vulnerability scans + penetration-tests
+  - penetration tests
+  - vulnerability scanner
