@@ -73,12 +73,12 @@
 
 ##
 
-- How to fight against common cyberattacks (Man In The Middle, SQL-Injection, Client-Side Code Injection, DoS / DDoS):
+- How to prevent common cyberattacks (Man In The Middle, SQL-Injection, Client-Side Code Injection, DoS / DDoS):
 
   - Use a VPN when connected to public wifi
   - Make sure SSL is up-to-date, certificates and all
   - Use MFA whenever possible, use strong passwords
-  - End-to-End Encryption in general
+  - Use End-to-End Encryption in general
   - Accept only specific syntax of data into forms (regex useful here?)
     - Strict enough rules also help against execution of Client-Side Code
     - (This should ALWAYS happen in backend-side! )
